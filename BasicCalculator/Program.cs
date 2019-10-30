@@ -6,6 +6,7 @@ namespace BasicCalculator
     {
         static void Main(string[] args)
         {
+
             //Name of the app
 
             Console.Write("\n\n");
@@ -14,20 +15,24 @@ namespace BasicCalculator
             Console.Write("\n\n");
 
             //Choose math operator
-
             int num1, num2, opt;
+
+            // Choose First and Second Number         
+
+
+            Console.Write("Enter First Number: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Second Number: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+
 
             Console.Write("\nPlease choose from the below options :\n\n");
             Console.Write("1-Addition.\n2-Substraction.\n3-Multiplication.\n4-Division.\n5-Remainder.\n6-Exit.\n");
             Console.Write("\nPLease enter your choice: ");
             opt = Convert.ToInt32(Console.ReadLine());
 
-            // Choose First and Second Number            
-
-            Console.Write("Enter First Number: ");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter Second Number: ");
-            num2 = Convert.ToInt32(Console.ReadLine()); 
+            
 
             // Case statement
 
@@ -72,13 +77,15 @@ namespace BasicCalculator
 
                 //exit
                 case 6:
+                    Console.Write("\nGoodbye!!!\n");
+                    Console.Read();
                     break;
 
-
-
-
-
-
+                //default
+                default:
+                    Console.Write("\nYou did not choose the correct option. Goodbye!!!\n");
+                    Console.Read();
+                    break;
             }
         }
     }
