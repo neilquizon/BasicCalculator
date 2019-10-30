@@ -64,6 +64,12 @@ namespace BasicCalculator
                     Console.Read();
                     break;
 
+                //Remainder
+                case 5:
+                    Console.Write("\nThe Remainder of {0} and {1} is: {2}\n", num1, num2, num1 % num2);
+                    Console.Read();
+                    break;
+
 
 
 
