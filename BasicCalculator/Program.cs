@@ -15,7 +15,7 @@ namespace BasicCalculator
 
             //Choose math operator
 
-            Console.Write("\nHere are the options :\n");
+            Console.Write("\nPlease choose from the below options :\n");
             Console.Write("1-Addition.\n2-Substraction.\n3-Multiplication.\n4-Division.\n5-Remainder.\n6-Exit.\n");
             Console.Write("\nInput your choice :");
 
@@ -40,8 +40,9 @@ namespace BasicCalculator
                     Console.Write("The Sum of  {0} and {1} is: {2}\n", num1, num2, num1 + num2);
                     break;
 
-               
+
             }
         }
     }
+}
 
