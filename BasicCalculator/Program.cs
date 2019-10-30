@@ -21,14 +21,27 @@ namespace BasicCalculator
 
             // Choose First and Second Number
 
-            Console.Write("Enter the First Number :");
+            int num1, num2, opt;
+
+            Console.Write("Enter First Number :");
             num1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the Second Number :");
+            Console.Write("Enter Second Number :");
             num2 = Convert.ToInt32(Console.ReadLine());
 
             // Math operator
 
-            mathOperator = Convert.ToInt32(Console.ReadLine());
+            opt = Convert.ToInt32(Console.ReadLine());
+
+            // Case statement
+
+            switch (opt)
+            {
+                case 1:
+                    Console.Write("The Sum of  {0} and {1} is: {2}\n", num1, num2, num1 + num2);
+                    break;
+
+               
+            }
         }
     }
-}
+
