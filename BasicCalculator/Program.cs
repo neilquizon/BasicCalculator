@@ -25,6 +25,10 @@ namespace BasicCalculator
             num1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter the Second Number :");
             num2 = Convert.ToInt32(Console.ReadLine());
+
+            // Math operator
+
+            mathOperator = Convert.ToInt32(Console.ReadLine());
         }
     }
 }
