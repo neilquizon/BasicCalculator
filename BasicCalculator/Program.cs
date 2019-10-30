@@ -33,7 +33,7 @@ namespace BasicCalculator
 
             switch (opt)
             {
-                case 1:
+                case 1:               
                     Console.Write("The Sum of {0} and {1} is: {2}\n", num1, num2, num1 + num2);
                     Console.Read();
                     break;
