@@ -35,19 +35,32 @@ namespace BasicCalculator
             {
                 //addition
                 case 1:               
-                    Console.Write("The Sum of {0} and {1} is: {2}\n", num1, num2, num1 + num2);
+                    Console.Write("\nThe Sum of {0} and {1} is: {2}\n", num1, num2, num1 + num2);
                     Console.Read();
                     break;
 
                 //subtraction
                 case 2:
-                    Console.Write("The Difference of {0} and {1} is: {2}\n", num1, num2, num1 - num2);
+                    Console.Write("\nThe Difference of {0} and {1} is: {2}\n", num1, num2, num1 - num2);
                     Console.Read();
                     break;
 
                 //multiplication
                 case 3:
-                    Console.Write("The Product of {0} and {1} is: {2}\n", num1, num2, num1 * num2);
+                    Console.Write("\nThe Product of {0} and {1} is: {2}\n", num1, num2, num1 * num2);
+                    Console.Read();
+                    break;
+
+                //division
+                case 4:
+                    if (num2 == 0)
+                    {
+                        Console.Write("\nThe second number is zero. The answer is Undefined.\n");
+                    }
+                    else
+                    {
+                        Console.Write("\nThe Quotient of {0} and {1} is : {2}\n", num1, num2, num1 / num2);
+                    }
                     Console.Read();
                     break;
 
