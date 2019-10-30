@@ -16,8 +16,15 @@ namespace BasicCalculator
             //Choose math operator
 
             Console.Write("\nHere are the options :\n");
-            Console.Write("1-Addition.\n2-Substraction.\n3-Multiplication.\n4-Division.\n5-Exit.\n");
+            Console.Write("1-Addition.\n2-Substraction.\n3-Multiplication.\n4-Division.\n5-Remainder.\n6-Exit.\n");
             Console.Write("\nInput your choice :");
+
+            // Choose First and Second Number
+
+            Console.Write("Enter the First Number :");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the Second Number :");
+            num2 = Convert.ToInt32(Console.ReadLine());
         }
     }
 }
