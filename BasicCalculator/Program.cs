@@ -70,6 +70,10 @@ namespace BasicCalculator
                     Console.Read();
                     break;
 
+                //exit
+                case 6:
+                    break;
+
 
 
 
