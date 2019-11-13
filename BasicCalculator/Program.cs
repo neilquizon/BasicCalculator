@@ -82,7 +82,14 @@ namespace BasicCalculator
 
                 //Remainder
                 case 5:
-                    Console.Write("\nThe Remainder of {0} and {1} is: {2}\n", num1, num2, Math.Round(num1 % num2, 2));
+                    if (num2 == 0)
+                    {
+                        Console.Write("\nThe second number is zero. The answer is Undefined.\n");
+                    }
+                    else
+                    {
+                        Console.Write("\nThe Remainder of {0} and {1} is: {2}\n", num1, num2, Math.Round(num1 % num2, 2));
+                    }
                     Console.Read();
                     break;
 
